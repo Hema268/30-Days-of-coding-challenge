@@ -12,3 +12,13 @@ if __name__ == '__main__':
         n = int(input())
         printPat(n)
         print()
+
+#Rectangle pattern
+def rect(a,b):
+    for row in range(a):
+        if row == 0 or row == a-1:
+            print("*" * b)
+        else:
+            print("*" + ' ' * (b-2) + "*")
+rect(4,6)
+rect(6,20)
