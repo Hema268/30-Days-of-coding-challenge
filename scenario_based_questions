@@ -1,0 +1,13 @@
+arr = list(map(int,input().split()))
+#arr = [2,3,4,5,6,7,5]
+rats = int(input())
+unit = int(input())
+t = 0
+total_units = rats * unit 
+for i in range(len(arr)):
+    t += arr[i]
+    if t >= total_units:
+        break
+if total_units > t:
+    print(0)
+print(i + 1)
