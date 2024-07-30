@@ -30,3 +30,10 @@ if __name__=='__main__':
         print()
 
 # } Driver Code Ends
+# ANOTHER METHOD TO SLOVE BUBBLE SORT
+a = [8,3,5,2,1]
+for i in range(0,5):
+    for j in range(i+1,5):
+        if a[i] > a[j]:
+            a[i],a[j] = a[j],a[i]
+print(a)
